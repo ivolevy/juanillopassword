@@ -102,7 +102,6 @@ export default function Home() {
               placeholder="Email, Phone, or Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              required
             />
             <input 
               type="password" 
@@ -111,7 +110,6 @@ export default function Home() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
             />
             <button 
               type="submit" 
