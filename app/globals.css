@@ -334,12 +334,12 @@ body {
     .footer-bottom {
         flex-direction: column;
         gap: 12px;
-        align-items: flex-start;
+        align-items: center;
         padding: 0 20px;
     }
 
     .footer-links {
-        justify-content: flex-start;
+        justify-content: center;
         gap: 12px;
         overflow-x: scroll;
     }
