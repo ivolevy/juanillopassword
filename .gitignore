@@ -1,5 +1,5 @@
 # Archivos de configuración con credenciales sensibles
-# config.js - comentado para permitir deployment en Vercel
+config.js
 
 # Archivos del sistema operativo
 .DS_Store
