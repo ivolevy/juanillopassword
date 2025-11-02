@@ -111,7 +111,7 @@ export default function Home() {
           </form>
 
           {/* Help Link */}
-          <a href="#" className="link-help">¿Can&apos;t reset your password?</a>
+          <a href="#" className="link-help">Forgot your password?</a>
 
           {/* Divider */}
           <div className="divider">
