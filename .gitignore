@@ -1,0 +1,18 @@
+# Archivos de configuración con credenciales sensibles
+config.js
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Node modules (por si usas npm en el futuro)
+node_modules/
+
+# Variables de entorno
+.env
+.env.local
+

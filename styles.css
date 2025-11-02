@@ -1,0 +1,342 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+    border-bottom: 1px solid #363636;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-login {
+    background-color: #0095F6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #0084e6;
+}
+
+.link-signup {
+    color: #A8D9FF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link-signup:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Card */
+.card {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 40px 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Lock Icon */
+.lock-icon {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.lock-icon svg {
+    width: 96px;
+    height: 96px;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+/* Card Description */
+.card-description {
+    font-size: 14px;
+    color: #A8A8A8;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 0 24px 0;
+    padding: 0 20px;
+}
+
+/* Form */
+.card-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    background-color: #262626;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-field::placeholder {
+    color: #A8A8A8;
+}
+
+.input-field:focus {
+    border-color: #A8A8A8;
+}
+
+/* Primary Button */
+.btn-primary {
+    width: 100%;
+    background-color: #0095F6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0084e6;
+}
+
+.btn-primary:active {
+    background-color: #0077d1;
+}
+
+/* Help Link */
+.link-help {
+    color: #0095F6;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.link-help:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: #262626;
+}
+
+.divider-text {
+    color: #A8A8A8;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Create Account Link */
+.link-create {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.link-create:hover {
+    text-decoration: underline;
+}
+
+/* Back Button */
+.btn-back {
+    width: 100%;
+    background-color: #262626;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #303030;
+}
+
+.btn-back:active {
+    background-color: #363636;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px 20px;
+    max-width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #A8A8A8;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #A8A8A8;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.language-selector svg {
+    width: 12px;
+    height: 12px;
+}
+
+.copyright {
+    color: #A8A8A8;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 32px 24px;
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        gap: 12px;
+        overflow-x: scroll;
+    }
+}
+
