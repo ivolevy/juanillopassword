@@ -185,6 +185,12 @@ body {
     background-color: #0077d1;
 }
 
+.btn-primary:disabled {
+    background-color: #0095F6;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 /* Help Link */
 .link-help {
     color: #0095F6;

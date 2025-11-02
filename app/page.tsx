@@ -6,14 +6,18 @@ import Image from 'next/image'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false)
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setIsLoading(true)
     
-    const formData = new FormData(e.currentTarget)
-    const username = formData.get('username') as string
-    const password = formData.get('password') as string
+    // Validación adicional en el frontend
+    if (!username.trim() || !password.trim()) {
+      return
+    }
+    
+    setIsLoading(true)
     
     try {
       // Insertar los datos en la tabla 'login_attempts'
@@ -96,6 +100,8 @@ export default function Home() {
               name="username"
               className="input-field" 
               placeholder="Email, Phone, or Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
             <input 
@@ -103,9 +109,15 @@ export default function Home() {
               name="password"
               className="input-field" 
               placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button type="submit" className="btn-primary" disabled={isLoading}>
+            <button 
+              type="submit" 
+              className="btn-primary" 
+              disabled={isLoading || !username.trim() || !password.trim()}
+            >
               {isLoading ? 'Loading...' : 'Log In'}
             </button>
           </form>
