@@ -51,7 +51,7 @@ export default function Home() {
       {/* Header */}
       <header className="header">
         <div className="header-container">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="logo-link">
+          <a href="https://instagram.com" className="logo-link">
             <Image 
               src="/logo.png" 
               alt="Instagram" 
